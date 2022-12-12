@@ -1,0 +1,37 @@
+.col-md-10 a{
+    color: #1ca373;
+}
+
+.text-center.mt-5 {
+    color: #18685b;
+}
+.navbar-nav .nav-link {
+    color: rgba(0,0,0,1) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.5) !important;
+}
+
+body {
+    font-family: "Josefin", sans-serif;
+    background: #f1defd;
+}
+
+#blogtitle {
+    font-size: 6rem;
+}
+
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 4rem;
+    }
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+}
+
+.btn.btn-primary.btn-blog {
+    background: #1ca373;
+    border-color: #1ca373;
+}
