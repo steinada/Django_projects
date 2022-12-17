@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="homebody">
+{% extends "todo/base.html" %}
+{% load static %}
+<link rel="stylesheet" href='{% static "todo/style.css" %}'>
+{% block content %}
+
+<div class="home_text">
+    <h3>Hello!</h3>
+    <p>I can help you to plan your affairs</p>
+    {% if user.is_authenticated %}
+    <p>Tap "Create" to make a new todo</p>
+    {% else %}
+    <p>Sign up or login to use all abilities</p>
+    {% endif %}
+</div>
+{% endblock %}
+</body>
+</html>

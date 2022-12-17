@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create your TODO</title>
+</head>
+<body class="todo-form-mainbody">
+{% extends "todo/base.html" %}
+{% block content %}
+
+<h1>Create</h1>
+<h2>{{error}}</h2>
+<div class="todo-form-body">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save-btn">Create</button>
+    </form>
+</div>
+{% endblock %}
+
+</body>
+</html>

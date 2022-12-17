@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #170016;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+}
+
+.user_logout {
+    margin: 0 55px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 50px;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+}
+
+.nav_links a, .nav_bar a {
+    color: #00d38e;
+    text-decoration: none;
+    padding-right: 10px;
+    border-right: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_links a:last-child, .nav_bar a:last-child {
+    border-right: none;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.user_logout_btn {
+    background-color: #097251;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.signuplogin {
+    display: flex;
+    justify-content: space-between;
+    width: 143px;
+}
+
+.homebody {
+    background: url(background_home.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.home_text {
+    margin-top: 180px;
+    margin-left: 280px;
+    color: #1d9368;
+    font-size: 50px;
+}
+
+.signuplogin_form {
+    margin-top: 185px;
+    margin-left: 250px;
+    width: 550px;
+    background: #918590;
+    padding: 30px 30px 30px 30px;
+    border-radius: 12px;
+}
+
+.signup_title{
+    margin-top: 0;
+}
+
+.sign_btn {
+    text-decoration: none;
+}
+
+.btn_btn {
+    background-color: #034d36;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    font-size: 13px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: #c1f1dd;
+    border: none;
+    border-radius: 4px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.signuplogin_page {
+    background: url(background_forms.jpg);
+}
+
+.body_current {
+    margin-top: 100px;
+    margin-left: 50px;
+    background: url(background_current.jpg);
+}
+
+li {
+    margin-left: 100px;
+}
+
+.element_list {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-create {
+    margin-left: 120px;
+    background-color: #680b16;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 17px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.current-list-block {
+    background-color: rgba(24, 162, 199, 0.8);
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+    width: 1000px;
+}
+
+.title_current {
+    color: #73a3ff;
+    font-size: 35px;
+}
+
+.current-list-block.empty {
+    font-size: 20px;
+    text-align: center;
+}
+
+#id_title, #id_memo {
+    border: 3px grey double;
+    border-radius: 10px;
+    background-color: #cdf8df;
+}
+
+body > div > form:nth-child(1) > p:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 104px;
+}
+
+.todo-form-mainbody {
+    background: url(background_create_edit.jpg);
+}
+
+.todo-form-body {
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+.save-btn, .comp-btn, .del-btn {
+    background-color: rgba(4, 121, 82, 0.8);
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.comp-btn {
+    margin-left: 30px;
+    background-color: #048526;
+}
+
+.del-btn {
+    margin-left: 90px;
+    background-color: #1a0119;
+}

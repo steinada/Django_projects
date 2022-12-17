@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href='{% static "todo/style.css" %}'>
+    <link rel="icon" type="png" href="{% static "todo/images.png" %}">
+</head>
+<body>
+
+{% if user.is_authenticated %}
+    <nav class="nav_bar">
+        <div class="nav_links">
+            <a href="{% url 'createtodos' %}">Create</a>
+            <a href="{% url 'currenttodos' %}">Current</a>
+            <a href="{% url 'completedtodos' %}">Completed</a>
+        </div>
+        <form action="{% url 'logoutuser' %}" method="POST" class="user_logout">
+            {% csrf_token %}
+            <p>Logged as {{user.username}}</p>
+            <button class="user_logout_btn" type="submit">Logout</button>
+        </form>
+    </nav>
+{% else %}
+
+<nav class="nav_bar">
+    <div class="signuplogin">
+        <a href="{% url 'signupuser' %}">Sign Up</a>
+        <a href="{% url 'loginuser' %}">Login</a>
+    </div>
+    {% endif %}
+</nav>
+{% block content %}{% endblock %}
+</body>
+</html>
